@@ -1,0 +1,95 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Escola DNC</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+ </head>
+<body>
+  <!-- Menu-Superior -->
+     <div id="menu-superior">
+          <a href="https://www.escoladnc.com.br/">
+              <img src="assets/Logo.svg" alt="" id="logo" srcset="">
+             </a>
+         <h1>Dê os primeiros passos da <br> sua carreira em Tecnologia</h1>
+             <p>Inscreva-se no curso gratuito de Introdução à <br>
+                  Tecnologia da DNC School e aprenda os principais <br>
+                      fundamentos para construir experiências efetivas.</p>
+     </div>
+ <!-- Menu-Informativo -->
+     <div id="menu-informativo">
+        
+             <p class="menu-informativo">
+                 <img src="/assets/Certificado.svg" class="icone" id="Certificado" alt="">
+                     Certificado de conclusão
+             </p>
+        
+             <p class="menu-informativo">
+                 <img src="/assets/Relogio.svg" class="icone" id="relogio" alt="" srcset="">
+                     4 horas de conteúdo
+             </p>
+         
+             <p class="menu-informativo">
+                 <img src="assets/Camera.svg" class="icone" id="camera" alt="" srcset="">
+                     Aulas online gravadas
+             </p>
+     </div>
+  <!-- Seção de Video -->   
+     <div id="secao-video">
+         <iframe  
+             id="video"
+                 width="713"
+                     height="283"
+                        src="https://www.youtube.com/embed/ITxGkd9h4n4"
+                     title="DNC - A escola inovadora que forma profissionais de alta perfomance"
+                 frameborder="0" 
+                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                         referrerpolicy="strict-origin-when-cross-origin"
+                     allowfullscreen>
+          </iframe>   
+             <div>
+                 <h2 id="titulo-video">
+                     Aprenda com especialistas e <br>
+                         comece seu primeiro projeto
+                 </h2>
+                 <p id="descricao-video">
+                     Conheça o processo de desenvolvimento e entenda como <br>
+                         utilizar os principais métodos e ferramentas da área para resolver <br>
+                             problemas complexos.
+                      <br> <br>
+                     Conquiste seu certificado e desenvolva um projeto prático para <br>
+                         aplicar seus conhecimentos.
+                 </p>
+             </div>        
+     </div>
+     <!--Carrossel-->
+     <div id="carrossel">
+         <h1 id="titulo-carrossel">
+             Mais de 500 alunos já iniciaram seus estudos
+         </h1>
+         <div id="div-cards">
+             <img src="assets/Seta-Esqueda.svg" onclick="RolarParaEsquerda()" id="seta-esquerda" class="seta" alt="" srcset="">
+                 <img src="assets/Leonardo.svg" id="Leonardo" class="card" alt="" srcset="">
+                 <img src="assets/Samantha.svg" id="Samantha" class="card" alt="" srcset="">
+                 <img src="assets/Bruna.svg"     id="Bruna"    class="card" alt="" srcset="">
+             <img src="assets/Seta-Direita.svg" onclick="RolarParaDireita()" id="seta-direita" class="seta" alt="" srcset="">
+         </div>
+     </div>
+     <!--Formulário-->
+     <div id="formulario" action="https://api.sheetmonkey.io/form/sLFwpddkHDFhXipR9j8hi" method="post">
+         <h1 id="titulo-formulario">Comece agora mesmo e dê o próximo passo da sua carreira</h1>
+         <form action="">
+             <input type="text" placeholder="Nome"  name="Name" required>  <br>
+             <input type="email" placeholder="E-mail" name="Email" required> <br>
+             <input type="number" placeholder="Telefone" name="Phone" required> <br>
+              <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+                 <button type="submit" id="botao-enviar">Acesse a ementa grátis</button>
+         </form>
+     </div>
+     <script src="index.js"></script>
+</body>
+ </html>
